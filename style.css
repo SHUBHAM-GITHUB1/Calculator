@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecdede9f;
+    margin: 0;
+}
+
+.calculator {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+#display {
+    width: 100%;
+    height: 70px;
+    font-size: 2em;
+    text-align: right;
+    border: none;
+    padding: 10px;
+    margin-bottom: 22px;
+    margin-left: -7px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #d0d0d0;
+    transform: scale(1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:nth-child(4n+1), button:nth-child(4n+2), button:nth-child(4n+3), button:nth-child(4n+4) {
+    background-color: #007AFF;
+    color: white;
+}
+
+button:nth-child(4n+1):hover, button:nth-child(4n+2):hover, button:nth-child(4n+3):hover, button:nth-child(4n+4):hover {
+    background-color: #005BBB;
+}
+button.eqlBtn{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start:4;
+    grid-column-end:6;
+ }
+ 
